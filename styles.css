@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+h1 span {
+    color: green;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    margin: 50px 0;
+}
+
+/* dice body  */
+/* #diceBody {
+    width: 500px;
+    border: 1px solid black;
+    padding: 10px;
+} */
+
+/* dice container  */
+#dice {
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 10px 0;
+    padding: 5px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.diceBox {
+    border: 2px solid #228B22;
+    border-radius: 10px;
+    width: 60px;
+    height: 70px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    /* text-align: center; */
+    align-content: center;
+    margin: 10px;
+    padding: 5px;
+    gap: 3px;
+    background-color:  #32CD32;
+    transition: transform 3s ease;
+    cursor: pointer;
+}
+
+.diceBox:hover {
+    transform: rotate(360deg);
+    background-color: red;
+    border:1px solid red;
+}
+
+.diceSix {
+    border: 1px solid rgb(19, 1, 1);
+    border-radius: 60%;
+    height: 20px;
+    width: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: white;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #32CD32;
+    color: white;
+    cursor: pointer;   
+}
+
+button:hover {
+    background-color: red;
+
+}
+
+.btn-roll {
+    display: flex;
+    justify-content: center;
+}
