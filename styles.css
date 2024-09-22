@@ -103,3 +103,21 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
+
+/* To hid my dots */
+.hidden {
+    visibility: hidden;
+}
+
+.rolling {
+    animation: shake 1s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
